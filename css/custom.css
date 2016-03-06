@@ -1,0 +1,269 @@
+/*
+** custom.css: custom styles for the Module 2 Coding Assignment.
+*/
+
+/*
+** Base Rules.
+*/
+body {
+    font-family: "Helvetica";
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 175%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 125%;
+}
+
+h3 {
+    font-size: 120%;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+section {
+    position: relative;
+    border: 1px solid black;
+    padding: 0.6em;
+    background-color: #D0D0D0;
+    margin-right: 1em;
+}
+
+#section-one .section-heading {
+    background-color: #996600;
+}
+
+#section-two .section-heading {
+    background-color: #FF0099;
+}
+
+#section-three .section-heading {
+    background-color: #CCFF33;
+}
+
+.section-heading {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid black;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+}
+
+/*
+** This rule selects the second direct child of each section.
+** The first direct child is always the section heading. This rule
+** creates some margin between the first and second (direct) children.
+*/
+section > :nth-child(2) {
+    margin-top: 3.5em;
+}
+
+ol, ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 1em;
+}
+
+
+/*
+** A simple responsive layout class.
+** The layout is based on a 12-column grid system where each
+** column has 1/12th the width of the parent element.
+** Column class elements will be descendants of the row class.
+*/
+.row {
+    width: 100%;
+    margin-top: 1em;
+    padding-left: 1em;
+}
+
+
+
+/*
+** Mobile-specific CSS Rules.
+*/
+@media (max-width: 767px) {
+    .col-mob-1, .col-mob-2, .col-mob-3, .col-mob-4, .col-mob-5, .col-mob-6,
+    .col-mob-7, .col-mob-8, .col-mob-9, .col-mob-10, .col-mob-11, .col-mob-12 {
+        float: left;
+        margin-bottom: 1em;
+    }
+
+    .col-mob-1 {
+        width: 8.333333%;
+    }
+
+    .col-mob-2 {
+        width: 16.66667%;
+    }
+
+    .col-mob-3 {
+        width: 25%;
+    }
+
+    .col-mob-4 {
+        width: 33.33333%;
+    }
+
+    .col-mob-5 {
+        width: 41.66667%;
+    }
+
+    .col-mob-6 {
+        width: 50%;
+    }
+
+    .col-mob-7 {
+        width: 58.33333%;
+    }
+
+    .col-mob-8 {
+        width: 66.66667%;
+    }
+
+    .col-mob-9 {
+        width: 75%;
+    }
+
+    .col-mob-10 {
+        width: 83.33333%;
+    }
+
+    .col-mob-11 {
+        width: 91.66667%;
+    }
+
+    .col-mob-12 {
+        width: 100%;
+    }
+}
+
+/*
+** Tablet-specific CSS Rules.
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tab-1, .col-tab-2, .col-tab-3, .col-tab-4, .col-tab-5, .col-tab-6,
+    .col-tab-7, .col-tab-8, .col-tab-9, .col-tab-10, .col-tab-11, .col-tab-12 {
+        float: left;
+        margin-bottom: 1em;
+    }
+
+    .col-tab-1 {
+        width: 8.333333%;
+    }
+
+    .col-tab-2 {
+        width: 16.66667%;
+    }
+
+    .col-tab-3 {
+        width: 25%;
+    }
+
+    .col-tab-4 {
+        width: 33.33333%;
+    }
+
+    .col-tab-5 {
+        width: 41.66667%;
+    }
+
+    .col-tab-6 {
+        width: 50%;
+    }
+
+    .col-tab-7 {
+        width: 58.33333%;
+    }
+
+    .col-tab-8 {
+        width: 66.66667%;
+    }
+
+    .col-tab-9 {
+        width: 75%;
+    }
+
+    .col-tab-10 {
+        width: 83.33333%;
+    }
+
+    .col-tab-11 {
+        width: 91.66667%;
+    }
+
+    .col-tab-12 {
+        width: 100%;
+    }
+}
+
+
+
+/*
+** Desktop-specific CSS Rules.
+*/
+@media (min-width: 992px) {
+    .col-dtp-1, .col-dtp-2, .col-dtp-3, .col-dtp-4, .col-dtp-5, .col-dtp-6,
+    .col-dtp-7, .col-dtp-8, .col-dtp-9, .col-dtp-10, .col-dtp-11, .col-dtp-12 {
+        float: left;
+        margin-bottom: 1em;
+    }
+
+    .col-dtp-1 {
+        width: 8.333333%;
+    }
+
+    .col-dtp-2 {
+        width: 16.66667%;
+    }
+
+    .col-dtp-3 {
+        width: 25%;
+    }
+
+    .col-dtp-4 {
+        width: 33.33333%;
+    }
+
+    .col-dtp-5 {
+        width: 41.66667%;
+    }
+
+    .col-dtp-6 {
+        width: 50%;
+    }
+
+    .col-dtp-7 {
+        width: 58.33333%;
+    }
+
+    .col-dtp-8 {
+        width: 66.66667%;
+    }
+
+    .col-dtp-9 {
+        width: 75%;
+    }
+
+    .col-dtp-10 {
+        width: 83.33333%;
+    }
+
+    .col-dtp-11 {
+        width: 91.66667%;
+    }
+
+    .col-dtp-12 {
+        width: 100%;
+    }
+}
+
+
+
+/*
+** Ends.
+*/
